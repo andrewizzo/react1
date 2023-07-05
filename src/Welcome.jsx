@@ -1,8 +1,11 @@
 import React from "react"; 
 
-function Welcome({name="Andrea"}){
+function Welcome({name="Andrea",age="24"}){
     return (
-        <p>Welcome,{name}!</p>
+        <div>
+            <p>Welcome,{name}!</p>
+            <p>Your age is {age}</p>
+        </div>
     )
 }
 

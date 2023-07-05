@@ -1,6 +1,6 @@
 import React from "react"; 
 
-function Welcome({name="Andrea",age="24"}){
+function Welcome({name=<strong>Andrea</strong>,age="24"}){
     return (
         <div>
             <p>Welcome,{name}!</p>

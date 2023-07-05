@@ -5,12 +5,12 @@ import Message from './Message';
 import Welcome from './Welcome';
 
 function App() {
-  const name="Andrea"
+  
   return (
     <div>
       <Hello/>
       <Message />
-      <Welcome name={name}/>
+      <Welcome />
     </div>
   );
 }

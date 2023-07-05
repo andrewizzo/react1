@@ -2,11 +2,15 @@ import './App.css';
 import React from 'react';
 import Hello from './Hello';
 import Message from './Message';
+import Welcome from './Welcome';
+
 function App() {
+  const name="Andrea"
   return (
-    <div className="App">
+    <div>
       <Hello/>
       <Message />
+      <Welcome name={name}/>
     </div>
   );
 }

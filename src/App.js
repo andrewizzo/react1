@@ -3,6 +3,7 @@ import React from 'react';
 import Hello from './Hello';
 import Message from './Message';
 import Welcome from './Welcome';
+import Counter from './Counter';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
       <Hello/>
       <Message />
       <Welcome />
+      <Counter />
     </div>
   );
 }

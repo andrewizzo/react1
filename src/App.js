@@ -5,6 +5,7 @@ import Message from './Message';
 import Welcome from './Welcome';
 import Counter from './Counter';
 import ClickerCounter from './ClickCounter';
+import ClickerTracker from './ClickerTracker';
 
 function App() {
   
@@ -13,7 +14,7 @@ function App() {
       <Hello/>
       <Message />
       <Welcome />
-      <ClickerCounter />
+      <ClickerTracker />
     </div>
   );
 }

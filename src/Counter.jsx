@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-function Counter(){
-    const [counter, setCounter] = useState(0);
+function Counter({initialValue=0,incrementInterval=1000,incrementAmount=1}){
+    const [counter, setCounter] = useState(initialValue);
 
     setInterval(() => {
-        setCounter((c) => c + 1);
-    },1000)
+        setCounter((c) => c + incrementAmount);
+    },incrementInterval)
 
     return <h1>{counter}</h1>
 }

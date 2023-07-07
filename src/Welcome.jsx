@@ -1,7 +1,7 @@
 import React from "react"; 
 import Age from "./Age";
 
-function Welcome({name="John",age="4"}){
+function Welcome({name="John",age="40"}){
     return (
         <div>
             <p>Welcome,{name}!</p>

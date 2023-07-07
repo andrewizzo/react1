@@ -6,6 +6,7 @@ import Welcome from './Welcome';
 import Counter from './Counter';
 import ClickerCounter from './ClickCounter';
 import ClickerTracker from './ClickerTracker';
+import InteractiveWelcome from './InteractiveWelcome';
 
 function App() {
   
@@ -13,8 +14,8 @@ function App() {
     <div>
       <Hello/>
       <Message />
-      <Welcome />
       <ClickerTracker />
+      <InteractiveWelcome />
     </div>
   );
 }

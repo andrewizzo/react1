@@ -21,6 +21,12 @@ const Login = ({onLogin}) => {
     }
   }
 
+  const handleReset = () => {
+    setUsername('')
+    setPassword('')
+    setIsButtonDisabled(true)
+  }
+
   return (
     <>
       <div>
@@ -32,6 +38,7 @@ const Login = ({onLogin}) => {
         <input type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
       </div>
       <button onChange={handleButtonDisabled} disabled={isButtonDisabled} >Login</button>
+      <button onClick={handleReset}>reset</button>
     </>
   )
 }

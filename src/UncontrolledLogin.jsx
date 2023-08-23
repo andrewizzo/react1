@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 
 const UncontrolledLogin = ({onLogin}) => {
@@ -21,6 +21,10 @@ const UncontrolledLogin = ({onLogin}) => {
         passwordRef.current.value = '';
         buttonRef.current.disabled = true;
     }
+
+    useEffect(() => {
+        usernameRef.current.focus();
+    },[])
 
     return (
         <>

@@ -7,6 +7,8 @@ const TodoList = () => {
     const handleAddItem = () => {
         if(inputValue.trim()){
             setItems([...items,inputValue])
+            //avevo gia aggiunto prima che quando premi il pulsante e aggiungi un item ,
+            //l'input si aggiorna in automatico riportando il valore a una stringa vuota,giusto? 
             setInputValue('');
         }
     }

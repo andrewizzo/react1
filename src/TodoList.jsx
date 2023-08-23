@@ -17,12 +17,20 @@ const TodoList = () => {
         setItems([])
     }
 
+    const handleRemoveItem = (index) => {
+        items.splice(index,1)
+        setItems([...items])
+    }
+
     return (
         <>
             <div>
                 <ul>
                     {items.map((item,index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index}>
+                            {item}
+                            <button onClick={() => handleRemoveItem(index)}>rimuovi</button>
+                        </li>
                     ))}
                 </ul>
                 <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />

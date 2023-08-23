@@ -13,6 +13,10 @@ const TodoList = () => {
         }
     }
 
+    const handleReset = () => {
+        setItems([])
+    }
+
     return (
         <>
             <div>
@@ -23,6 +27,7 @@ const TodoList = () => {
                 </ul>
                 <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <button onClick={handleAddItem}>add</button>
+                <button onClick={handleReset}>reset</button>
             </div>
         </>
     )
